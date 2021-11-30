@@ -1,0 +1,6 @@
+language: generic
+deploy:
+  provider: script
+  script: bash CI/update_package_branch.sh
+  on:
+    tags: true
